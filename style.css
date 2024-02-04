@@ -1,15 +1,324 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h1{
-    background-color: black;
+#form h1 {
+    background-color: rgb(124, 0, 0);
     color: white;
     padding: 20px;
 }
 
-#form{
-    border-right:5px solid black;
+#form {
+    border-right: 5px solid black;
+}
+
+#container {
+    margin-top: 300px;
+    position: relative;
+    max-width: 1000px;
+    min-height: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.left-side {
+    position: relative;
+    padding: 40px;
+    background-color: rgb(124, 0, 0);
+    color: whitesmoke;
+}
+
+.profil {
+    padding: 10px;
+    width: 100%;
+    float: left;
+}
+
+.pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic {
+    background-image: url('./images/pic.png');
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    border: 5px solid darkred;
+    background-repeat: no-repeat;
+}
+
+.contact-container {
+    width: 100%;
+    float: left;
+    margin: 40px 0px;
+}
+
+.contact-container h2 {
+    margin-right: -50px;
+    border-bottom: 1px solid whitesmoke;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.contact-container h5 {
+    line-height: 25px;
+}
+
+.contact-container h5 ion-icon {
+    margin-right: 5px;
+    margin-bottom: -4px;
+    background-color: firebrick;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.competence-container {
+    width: 100%;
+    float: left;
+}
+
+.competence-container h2 {
+    margin-right: -50px;
+    border-bottom: 1px solid whitesmoke;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.competence-container ol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    list-style: outside;
+}
+
+.language-container {
+    width: 100%;
+    float: left;
+    margin: 40px 0;
+}
+
+.language-container h2 {
+    margin-right: -50px;
+    border-bottom: 1px solid whitesmoke;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.language-container h3 {
+    font-size: 1em;
+    padding-bottom: 10px;
+}
+
+.interest-container {
+    width: 100%;
+    float: left;
+}
+
+.interest-container h2 {
+    margin-right: -50px;
+    border-bottom: 1px solid whitesmoke;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.interest-container ol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    list-style: outside;
+}
+
+/*-----------------------------------*/
+
+.right-side {
+    position: relative;
+    padding: 40px;
+    background: white;
+    width: 50%; /* Adjusted width to 50% for equal columns */
+}
+
+.about-container {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+.about-container h1 {
+    font-weight: bold;
+    color: rgb(65, 53, 53);
+}
+
+.about-container h1 span {
+    color: darkred;
+    font-weight: bolder !important;
+    text-transform: uppercase;
+}
+
+.about-container h2 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: rgb(65, 53, 53);
+    font-weight: 600;
+}
+
+.about-container p {
+    font-size: 0.9em;
+    text-wrap: justify;
+    color: rgb(65, 53, 53);
+}
+
+.education-container {
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+
+.education-container h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: x-large;
+    color: darkred;
+}
+
+.education-container h2 ion-icon {
+    margin-bottom: -5px;
+    margin-right: 5px;
+    color: white;
+    background-color: darkred;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.education {
+    border-left: 2px solid darkred;
+    padding-bottom: 5px;
+}
+
+.education-content {
+    position: relative;
+    padding-left: 1rem;
+}
+
+.education-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: darkred;
+    border-radius: 50%;
+}
+
+.content h5 {
+    color: darkred;
+    font-weight: bolder;
+}
+
+.content h4 {
+    text-transform: uppercase;
+    color: rgb(65, 53, 53);
+}
+
+.content p {
+    color: rgb(65, 53, 53);
+}
+
+.experience-container {
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+}
+
+.experience-container h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: x-large;
+    color: darkred;
+}
+
+.experience-container h2 ion-icon {
+    margin-bottom: -5px;
+    margin-right: 5px;
+    color: white;
+    background-color: darkred;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.experience {
+    border-left: 2px solid darkred;
+    padding-bottom: 5px;
+}
+
+.experience-content {
+    position: relative;
+    padding-left: 1rem;
+}
+
+.experience-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: darkred;
+    border-radius: 50%;
+}
+
+/* Styling for the preview content */
+.provision-container {
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+}
+
+.provision-container h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: x-large;
+    color: darkred;
+}
+
+.provision-container h2 ion-icon {
+    margin-bottom: -5px;
+    margin-right: 5px;
+    color: white;
+    background-color: darkred;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.provision {
+    border-left: 2px solid darkred;
+    padding-bottom: 5px;
+}
+
+.provision-content {
+    position: relative;
+    padding-left: 1rem;
+}
+
+.provision-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: darkred;
+    border-radius: 50%;
 }
