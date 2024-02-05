@@ -14,6 +14,18 @@
     border-right: 5px solid black;
 }
 
+#form {
+    border-right: 5px solid black;
+}
+
+textarea,.input-group button{
+    border-radius: 0px !important;
+}
+
+.form-control {
+    resize: none;
+}
+
 #container {
     margin-top: 300px;
     position: relative;

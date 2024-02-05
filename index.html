@@ -31,42 +31,48 @@
                             <label for="description" class="form-label">Description</label>
                             <textarea class="form-control" id="description" rows="3" placeholder="Présentez-vous"></textarea>
                         </div>
+                        
                         <div class="mb-3">
                             <label for="formation" class="form-label">Formations</label>
-                            <textarea class="form-control" id="formation" rows="3" placeholder="Formation"></textarea>
+                            <div class="input-group">
+                                <textarea class="form-control" id="formation" rows="3" placeholder="Formation"></textarea>
+                                <button class="btn btn-outline-secondary" type="button"><ion-icon name="add-circle-sharp"></ion-icon></button>
+                            </div>
                             <input type="date" name="date" id="date">
-                        </div>
-                        <div class="mb-3">
-                            <label for="experience" class="form-label">Expériences</label>
-                            <textarea class="form-control" id="experience" rows="3" placeholder="Expérience"></textarea>
-                            <input type="date" name="date" id="date">
-                        </div>
-                        <div class="mb-3">
-                            <label for="competence" class="form-label">Competences</label>
-                            <textarea class="form-control" id="competence" rows="3" placeholder="competence"></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="langue" class="form-label">Langues</label>
-                            <textarea class="form-control" id="langue" rows="3" placeholder="langue"></textarea>
                         </div>
 
+                        <!-- Experiences Section -->
                         <div class="mb-3">
-                            <label for="contact" class="form-label">Contact</label>
-                            <div>
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" name="email" id="email">
+                            <label for="experience" class="form-label">Expériences</label>
+                            <div class="input-group">
+                                <textarea class="form-control" id="experience" rows="3" placeholder="Expérience"></textarea>
+                                <button class="btn btn-outline-secondary" type="button"><ion-icon name="add-circle-sharp"></ion-icon></button>
                             </div>
-                            <div>
-                                <label for="tel" class="form-label">Téléphone</label>
-                                <input type="tel" name="tel" id="tel">
-                            </div>
-                            <div>
-                                <label for="adresse" class="form-label">Adresse</label>
-                                <textarea class="form-control" name="adresse" id="adresse" rows="3" placeholder="Adresse"></textarea>
+                            <input type="date" name="date" id="date">
+                        </div>
+
+                        <!-- Competences Section -->
+                        <div class="mb-3">
+                            <label for="competence" class="form-label">Compétences</label>
+                            <div class="input-group">
+                                <textarea class="form-control" id="competence" rows="3" placeholder="Compétence"></textarea>
+                                <button class="btn btn-outline-secondary" type="button"><ion-icon name="add-circle-sharp"></ion-icon></button>
                             </div>
                         </div>
-                        
+
+                        <!-- Langues Section -->
+                        <div class="mb-3">
+                            <label for="langue" class="form-label">Langues</label>
+                            <div class="input-group">
+                                <textarea class="form-control" id="langue" rows="3" placeholder="Langue"></textarea>
+                                <button class="btn btn-outline-secondary" type="button"><ion-icon name="add-circle-sharp"></ion-icon></button>
+                            </div>
+                        </div>
+
+                        <!-- Existing contact section -->
+
                         <button type="submit" class="btn btn-secondary">Générer Portfolio</button>
+                    
                     </form>
                 </div>
             </div>
